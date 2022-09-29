@@ -1,0 +1,16 @@
+server:
+  port: 9099
+
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+queues: test-queue, another-test-queue
+
+logging:
+  level:
+    org.springframework.boot.autoconfigure.amqp: DEBUG
+    org.springframework.amqp.rabbit: DEBUG
